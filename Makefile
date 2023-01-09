@@ -5,5 +5,5 @@ proy2.o: proy2.c lista_xor.h
 	gcc -Wall -c proy2.c -o proy2.o
 	
 proy2: proy2.o lista_xor.o
-	gcc -Wall proy1.o lista_xor.o -o proy2	
+	gcc -Wall proy2.o lista_xor.o -o proy2	
 		
