@@ -65,15 +65,19 @@ int main(){
                 break;
 
             case 7:
-                sacar_principio(listap,&elemento);
-                printf("El elemento sacado fue %i \n",elemento);
+                if (sacar_principio(listap,&elemento))
+                    printf("El elemento sacado fue %i \n",elemento);
+                else
+                    printf("La lista esta vacia");
                 getchar();
                 getchar();
                 break;
 
             case 8:
-                sacar_final(listap,&elemento);
-                printf("El elemento sacado fue %i \n",elemento);
+                if (sacar_final(listap,&elemento))
+                    printf("El elemento sacado fue %i \n",elemento);
+                else
+                    printf("La lista esta vacia");
                 getchar();
                 getchar();
                 break;
